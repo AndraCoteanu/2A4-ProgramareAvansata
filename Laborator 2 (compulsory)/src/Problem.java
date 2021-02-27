@@ -47,8 +47,7 @@ public class Problem {
         }
     }
 
-    public void printProblem()
-    {
+    public void printProblem() {
         /* accesez elementele de pe pozitiile 0,1,2 din ambele liste;
            acestea apeleaza mai apoi functiile toString din clasele aferente pentru a face print-ul mai eficient */
         System.out.println(surse.get(0));
