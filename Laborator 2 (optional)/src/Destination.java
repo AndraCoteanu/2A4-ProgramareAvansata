@@ -3,6 +3,7 @@ import java.util.Objects;
 /**
  * @author Andra C.
  * @version "%I%, %G%"
+ *
  * <p> Stocheaza destinatiile unde trebuie trimise unitatile </p>
  * <p> Fiecare destinatie are un demand/commodity de unitati </p>
  */

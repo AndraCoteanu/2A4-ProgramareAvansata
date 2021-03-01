@@ -1,7 +1,7 @@
 /**
  * @author Andra C.
  * @version "%I%, %G%"
- * <p> Programul principal unde se afla meoda main si se acceseaza toate clasele </p>
+ * <p> Programul principal unde se afla metoda main si se acceseaza toate clasele </p>
  */
 public class main {
     /**
