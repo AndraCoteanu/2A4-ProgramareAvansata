@@ -89,8 +89,7 @@ public class Solution {
     /**
      * <p> Se creaza instantele unei probleme si se afiseaza acestea </p>
      * <p> Metoda calculeaza apoi solutia problemei </p>
-     *
-     * @link https://www.geeksforgeeks.org/transportation-problem-set-4-vogels-approximation-method/  Metoda folosita este cea explicata pe acest site
+     * <p> Metoda folosita este cea explicata pe acest site: <a href="url">https://www.geeksforgeeks.org/transportation-problem-set-4-vogels-approximation-method/</a> </p>
      */
     public void solutia() {
         /* se initializeaza datele problemei */
