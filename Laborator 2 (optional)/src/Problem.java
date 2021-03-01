@@ -1,13 +1,25 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Andra C.
+ * @version "%I%, %G%"
+ * <p> Clasa Problem instantiaza un obiect cu informatii despre o problema de transport </p>
+ */
 public class Problem {
+    /**
+     * <p> Creaza un string cu informatii </p>
+     *
+     * @return stringul
+     */
     @Override
     public String toString() {
         return "Acestea sunt datele problemei:";
     }
 
-    /* un constructor gol pentru a crea obiecte de tipul Problem */
+    /**
+     * <p> Class empty constructor </p>
+     */
     public Problem() {
     }
 
@@ -17,7 +29,13 @@ public class Problem {
     public List<Destination> destinatii = new ArrayList<>();
     public int[][] cost = new int[MATRIX_DIM][MATRIX_DIM];
 
-    /* metoda makeProblem initializeaza un obiect de tip Problem cu instantele unei probleme ca cea din enunt*/
+    /* metoda makeProblem initializeaza un obiect de tip Problem cu instantele unei probleme ca cea din enunt */
+
+    /**
+     * <p> Declara si initializeaza obiecte sursa si destinatie. </p>
+     * <p> Le adauga in listele aferente pentru o mai buna organizare a datelor </p>
+     * <p> Se genereaza random o matrice de cost pentru trasportul de la o sursa la destinatie </p>
+     */
     public void makeProblem() {
         /* 3 obiecte de tipul sursa folosind valorile din enunt */
         Factories S1 = new Factories("S1", 10);
@@ -47,6 +65,9 @@ public class Problem {
         }
     }
 
+    /**
+     * <p> Metoda afiseaza datele problemei dupa ce au fost create </p>
+     */
     public void printProblem() {
         /* accesez elementele de pe pozitiile 0,1,2 din ambele liste;
            acestea apeleaza mai apoi functiile toString din clasele aferente pentru a face print-ul mai eficient */

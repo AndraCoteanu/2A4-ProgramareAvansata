@@ -1,17 +1,16 @@
-/* @autor: Andra C. */
+/**
+ * @author Andra C.
+ * @version "%I%, %G%"
+ * <p> Programul principal unde se afla meoda main si se acceseaza toate clasele </p>
+ */
 public class main {
+    /**
+     * <p> Se creaza o problema, se afiseaza datele acesteia si apoi o rezolvare de cost minim </p>
+     *
+     * @param args valorile declarate la linia de comanda folosite in interiorul programului (nu sunt folosite astfel de valori)
+     */
     public static void main(String[] args) {
-        /* declar un obiect de tipul Problem pentru ai putea accesa functionalitatile */
-        Problem problema = new Problem();
-
-        /* se initializeaza datele problemei */
-        problema.makeProblem();
-
-        /* se afiseaza datele problemei */
-        System.out.println("");
-        System.out.println(problema);
-        problema.printProblem();
-
+        /* se solicita o solutie la o problema de transport */
         Solution solutie = new Solution();
         System.out.println("");
         System.out.println(solutie);

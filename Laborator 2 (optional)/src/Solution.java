@@ -1,8 +1,20 @@
+/**
+ * @author Andra C.
+ * @version "%I%, %G%"
+ * <p> Se calculeaza o solutie pentru problema creata </p>
+ */
 public class Solution {
-
+    /**
+     * <p> Class empty constructor </p>
+     */
     public Solution() {
     }
 
+    /**
+     * <p> Se creaza un string cu informatiile solutiei </p>
+     *
+     * @return stringul
+     */
     @Override
     public String toString() {
         return "Solutia pentru problema data este:";
@@ -14,17 +26,27 @@ public class Solution {
     public int[] Row = new int[problema.MATRIX_DIM];
     public int[] Column = new int[problema.MATRIX_DIM];
 
+    /**
+     * <p> Se verifica daca au fost modificate toate costurile cu 100 (o valoare mai mare decat 10) </p>
+     *
+     * @return 0 daca nu s-au terminat livrarile
+     */
     public int verificareLivrari() {
         for (int i = 0; i < problema.MATRIX_DIM; i++) {
             for (int j = 0; j < problema.MATRIX_DIM; j++) {
                 if (problema.cost[i][j] <= 10) {
-                    return 0; //adica nu e gata
+                    return 0; //nu e gata
                 }
             }
         }
         return 1; //gata livrarile
     }
 
+    /**
+     * <p> Parcurge fiecare rand din matricea de cost </p>
+     * <p> Gaseste cele mai 2 mici costuri </p>
+     * <p> Face diferenta lor si o memoreaza in vectorul Row[] </p>
+     */
     public void diffRow() {
         int min1, min2;
         for (int i = 0; i < problema.MATRIX_DIM; i++) {
@@ -42,6 +64,11 @@ public class Solution {
         }
     }
 
+    /**
+     * <p> Parcurge fiecare coloana din matricea de cost </p>
+     * <p> Gaseste cele mai 2 mici costuri </p>
+     * <p> Face diferenta lor si o memoreaza in vectorul Column[] </p>
+     */
     public void diffColumn() {
         int min1, min2;
         for (int i = 0; i < problema.MATRIX_DIM; i++) {
@@ -59,9 +86,20 @@ public class Solution {
         }
     }
 
+    /**
+     * <p> Se creaza instantele unei probleme si se afiseaza acestea </p>
+     * <p> Metoda calculeaza apoi solutia problemei </p>
+     *
+     * @link https://www.geeksforgeeks.org/transportation-problem-set-4-vogels-approximation-method/  Metoda folosita este cea explicata pe acest site
+     */
     public void solutia() {
         /* se initializeaza datele problemei */
         problema.makeProblem();
+        /* se afiseaza datele problemei */
+        System.out.println("");
+        System.out.println(problema);
+        problema.printProblem();
+        /* se incepe rezolvarea problemei */
         int costTotal = 0;
         int livrare;
         livrare = verificareLivrari();
@@ -75,6 +113,7 @@ public class Solution {
             int rand, coloana; //numarul randului/coloanei unde este penalitatea maxima
             rand = -1;
             coloana = -1;
+            /* se calculeaza penalizarea: valoarea maxima a valorilor din Row[] si Column[] */
             int penality = -1;
             for (int i = 0; i < problema.MATRIX_DIM; i++) {
                 if (Row[i] > penality) {
@@ -88,12 +127,14 @@ public class Solution {
                 }
             }
 
+            /* dupa ce s-a identificat o linie sau coloana se parcurge aceasta si se gaseste costul minim */
             int costMin = 20;
             int coordRand, coordColoana;
             coordColoana = 0;
             coordRand = 0;
             int i = -1;
 
+            /* dupa ce s-a gasit costul minim se verifica cererea destinatiei si capacitatea sursei si se face un transport */
             if (locatie == 0) //rand
             {
                 for (i = 0; i < problema.MATRIX_DIM; i++) {
@@ -184,8 +225,10 @@ public class Solution {
                     }
                 }
             }
+            /* dupa fiecare transport se verifica daca au fost facute toate livrarile */
             livrare = verificareLivrari();
         }
+        /* afisam costul total */
         System.out.println("Costul total este: " + costTotal);
     }
 }
