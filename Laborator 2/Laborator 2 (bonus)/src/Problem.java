@@ -37,7 +37,7 @@ public class Problem {
      */
     public void makeProblem() {
 
-        for (int i = 0; i < MATRIX_DIM; i++) {
+        for (int i = 0; i < MATRIX_DIM - 1; i++) {
             int type = (int) (Math.random() * 3 + 1);
             int capacitate = (int) (Math.random() * 55 + 5);
             String numeSursa = "S";
@@ -57,9 +57,57 @@ public class Problem {
             Destination D1 = new Destination(numeDestinaatie, comoditate);
             destinatii.add(D1);
         }
-
-
-        int i, j;
+        /* ASIGUR SUMA SUPLY = SUMA DEMAND */
+        /* mai repet odata algoritmul cu o mica diferenta pentru ultimul element */
+        int type = (int) (Math.random() * 3 + 1);
+        int capacitate = (int) (Math.random() * 55 + 5);
+        String numeSursa = "S";
+        numeSursa = numeSursa.concat(String.valueOf(MATRIX_DIM));
+        if (type == 1) {
+            Factories S1 = new Factories(numeSursa, capacitate);
+            surse.add(S1);
+        } else {
+            Warehouse S1 = new Warehouse(numeSursa, capacitate);
+            surse.add(S1);
+        }
+        int i, sumaSurse = 0;
+        for (int i = 0; i < MATRIX_DIM; i++) {
+            sumaSurse += surse.get(i).capacitate;
+        }
+        int sumaDestinatii = 0;
+        for (int i = 0; i < MATRIX_DIM - 1; i++) {
+            sumaDestinatii += destinatii.get(i).comoditate;
+        }
+        /* ultimul element va fi diferenta care sa faca suma cererii = suma ofertei */
+        /* se va adauga diferenta ca ultimul element din destinatii */
+        if(sumaSurse > sumaDestinatii) {
+            int comoditate = sumaSurse - sumaDestinatii;
+            String numeDestinaatie = "D";
+            numeDestinaatie = numeDestinaatie.concat(String.valueOf(id));
+            Destination D1 = new Destination(numeDestinaatie, comoditate);
+            destinatii.add(D1);
+            /* daca sunt egale din ultima sursa se scad 5 unitati si se adauga la ultima destinatie */
+        } else if(sumaSurse == sumaDestinatii) {
+            surse.get(MATRIX_DIM - 1).capacitate -= 5;
+            String numeDestinaatie = "D";
+            numeDestinaatie = numeDestinaatie.concat(String.valueOf(id));
+            Destination D1 = new Destination(numeDestinaatie, 5);
+            destinatii.add(D1);
+            /* daca suma surselor < suma destinatiilor - una atunci se va pune in ultima destinatie valoarea ultimei surse
+               iar ultima sursa va avea valoarea diferentei 
+            */
+        } else {
+            int capacitate = sumaSurse - sumaDestinatii;
+            int comoditate = surse.get(MATRIX_DIM - 1).capacitate;
+            surse.get(MATRIX_DIM - 1).capacitate = capacitate;
+            String numeDestinaatie = "D";
+            numeDestinaatie = numeDestinaatie.concat(String.valueOf(id));
+            Destination D1 = new Destination(numeDestinaatie, comoditate);
+            destinatii.add(D1);
+        }
+        
+        
+        int j;
         /* se genereaza random o matrice de costuri, costul aflanduse in intervalul [1,9]*/
         /* se stiu cate surse si destinatii avem pentru declararea matricei de cost si generarea acesteia */
         for (i = 0; i < MATRIX_DIM; i++) {
