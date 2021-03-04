@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class City {
     public String name;
-    private List<Location> locatii = new ArrayList<>();
+    protected List<Location> locatii = new ArrayList<>();
 
     /**
      * <p> Class constructor. </p>

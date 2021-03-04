@@ -75,4 +75,13 @@ public class Museum extends Location implements Visitable, Payable {
     public int compareTo(Location o) {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Museum{" +
+                "address='" + address + '\'' +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

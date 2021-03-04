@@ -101,4 +101,15 @@ public class Hotel extends Location implements Visitable, Payable, Classifiable 
     public int compareTo(Location o) {
         return 0;
     }
+
+    @Override
+    public String toString() {
+
+        return "Hotel{" +
+                "name='" + name + '\'' +
+                ", capacity=" + capacity +
+                ", price=" + price +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }

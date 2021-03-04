@@ -51,4 +51,13 @@ public class Church extends Location implements Visitable, Classifiable{
     public int compareTo(Location o) {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Church{" +
+                "name='" + name + '\'' +
+                ", religion='" + religion + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }

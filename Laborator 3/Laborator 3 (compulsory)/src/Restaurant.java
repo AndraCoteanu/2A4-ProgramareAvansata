@@ -57,4 +57,13 @@ public class Restaurant extends Location implements Visitable, Payable, Classifi
     public int compareTo(Location o) {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Restaurant{" +
+                "address='" + address + '\'' +
+                ", name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }

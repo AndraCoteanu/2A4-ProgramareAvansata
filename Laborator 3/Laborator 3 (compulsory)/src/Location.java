@@ -10,7 +10,7 @@ public abstract class Location implements Comparable<Location>{
     protected String address;
     protected Map<Location, Integer> cost = new HashMap<>();
 
-    public Location(String address) {
+    public Location() {
         this.address = address;
     }
 
@@ -26,7 +26,14 @@ public abstract class Location implements Comparable<Location>{
         return cost;
     }
 
-    public void setCost(Map<Location, Integer> cost) {
-        this.cost = cost;
+    public void setCost(Location node, int value) {
+        cost.put(node, value);
+    }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "address='" + address + '\'' +
+                '}';
     }
 }
