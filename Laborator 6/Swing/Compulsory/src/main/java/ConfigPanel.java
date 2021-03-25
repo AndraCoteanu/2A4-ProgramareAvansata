@@ -24,8 +24,8 @@ public class ConfigPanel extends JPanel {
         shape = new JComboBox(shapeStrings);
         shape.setSelectedIndex(3);
  //...TODO
-        JLabel label = new JLabel("       Insert your preffered configuration for the image.  Note: The polygon will be only one with the number of sides specified. Other shapes can be 1-100.\n                                                                                                                                                                                  ");
-        add(label);
+//        JLabel label = new JLabel("       Insert your preffered configuration for the image.  Note: The polygon will be only one with the number of sides specified. Other shapes can be 1-100.\n                                                                                                                                                                                  ");
+//        add(label);
         JLabel label1 = new JLabel("   Choose a shape:  ");
         add(label1);
         add(shape);

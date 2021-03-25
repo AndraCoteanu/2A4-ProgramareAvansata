@@ -20,18 +20,16 @@ public class MainFrame extends JFrame {
 
         //create the components
         canvas = new DrawingPanel(this);
-        ConfigPanel panel = new ConfigPanel(this);
- //...TODO
+        configPanel = new ConfigPanel(this);
+        controlPanel = new ControlPanel(this);
 
         //arrange the components in the container (frame)
         //JFrame uses a BorderLayout by default
-        add(panel, BorderLayout.NORTH);
-        add(canvas, CENTER); //this is BorderLayout.CENTER
- //...TODO
+        add(configPanel, BorderLayout.NORTH);
+        add(controlPanel, BorderLayout.SOUTH);
+        add(canvas, BorderLayout.CENTER); //this is BorderLayout.CENTER
 
         //invoke the layout manager
         pack();
-        setContentPane(panel);
-        setVisible(true);
     }
 }

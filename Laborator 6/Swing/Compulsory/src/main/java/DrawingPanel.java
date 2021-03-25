@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 
 public class DrawingPanel extends JPanel {
     final MainFrame frame;
-    final static int W = 800, H = 600;
+    final static int W = 900, H = 600;
     BufferedImage image; //the offscreen image
     Graphics2D graphics; //the "tools" needed to draw in the image
     public DrawingPanel(MainFrame frame) {
@@ -30,9 +30,10 @@ public class DrawingPanel extends JPanel {
         });
     }
     private void drawShape(int x, int y) {
-        int radius = 0;  /*... TODO; */  //generate a random number
-        int sides = 0;   /*... TODO; */  //get the value from UI (in ConfigPanel)
-        Color color = null; /*... TODO; */  //create a transparent random Color.
+        int radius = (int)(Math.random() * 100 + 5);
+        int sides = (int) new ConfigPanel(frame).sidesField.getValue();
+        System.out.println(sides);
+        Color color = new Color((int) (100 * Math.random()), 0 , 0, 100);
         graphics.setColor(color);
         graphics.fill(new RegularPolygon(x, y, radius, sides));
     }
