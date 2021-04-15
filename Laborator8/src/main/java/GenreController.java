@@ -1,0 +1,2 @@
+public class GenreController {
+}
