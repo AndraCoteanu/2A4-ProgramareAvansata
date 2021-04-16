@@ -1,6 +1,6 @@
-##Coteanu Andra - LABORATOR 8 
+## Coteanu Andra - LABORATOR 8 
 
-#Compulsory
+# Compulsory
 
 * Am ales sa folosesc baza de date Oracle fiind deja familiara cu aceasta.
 * Scriptul lab8.sq se afla in folderul cu resursele proiectului.
