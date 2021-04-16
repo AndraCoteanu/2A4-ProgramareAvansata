@@ -1,4 +1,5 @@
 ##Coteanu Andra - LABORATOR 8 
+
 #Compulsory
 
 * Am ales sa folosesc baza de date Oracle fiind deja familiara cu aceasta.
