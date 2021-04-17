@@ -16,7 +16,7 @@
   * inserarea unui film in tabela movies
   * inserarea unui gen de filme in tabela genres
   
-##Optional
+## Optional
 
 * Am adaugat in lab8.sql tabelele pentru actori si directori ca extensie a tabelei persoane
 * Pentru datele cu care lucreaza acteasta aplicatie Java:
@@ -25,7 +25,7 @@
   * am adaugat butonul "Genres" - se selecteaza un gen de film si se vor afisa toate filmele existene in baza de date cu acel gen
   * dupa selectarea unei optiuni apare o fereastra de tip pop-up care anunta ca toate informatiile au fost afisate in consola
   
-##Bonus
+## Bonus
 
 *
 
