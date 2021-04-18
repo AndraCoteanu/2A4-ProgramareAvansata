@@ -27,7 +27,10 @@
   
 ##Bonus
 
-*
+* Am implementat clasa ConnectionPool pentru a realiza conexiuni la baza de date cu c3p0.
+* Clasa MovieThread implementeaza functia care va fi rulata de threaduri in conexiune.
+* Clasa MovieThreadPool creaza threaduri pentru conexiunea cu c3p0.
+* Am creat intr-un for 20 de threaduri si am monitorizat activitatea lor cu Visual VM
 
 #### In plus: am implementat si o interfata grafica cu javaFX pentru a face aplicatia mai user friendly.
 
