@@ -1,4 +1,4 @@
-# COTEANU ANDRA - Laborator 9
+# Coteanu Andra - Laborator 9
 ## Compulsory
 
 + Am adaptat proiectul (facut in IntelliJ) pentru laboratorul 8 pentru cel din 9:
