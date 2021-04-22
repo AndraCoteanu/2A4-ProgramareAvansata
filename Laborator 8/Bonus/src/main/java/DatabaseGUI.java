@@ -178,6 +178,15 @@ public class DatabaseGUI {
     EventHandler<ActionEvent> exitHandler = new EventHandler<ActionEvent>() {
         @Override
         public void handle(ActionEvent event) {
+            Database database;
+            try {
+                database = Database.getInstance();
+                database.connection.close();
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
             window.close();
         }
     };
@@ -188,7 +197,7 @@ public class DatabaseGUI {
     EventHandler<ActionEvent> poolHandler = new EventHandler<ActionEvent>() {
         @Override
         public void handle(ActionEvent event) {
-            MovieThreadPool threadPoolExecutor = (MovieThreadPool) Executors.newFixedThreadPool(20);
+            ExecutorService threadPoolExecutor = Executors.newFixedThreadPool(20);
             for (int i = 0; i < 20; i++) {
                 Runnable artistThread = new MovieThread(i);
                 threadPoolExecutor.execute(artistThread);
