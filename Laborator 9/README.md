@@ -7,3 +7,4 @@
   + am creat pesistence.xml
 
 + In persistence.xml am adaugat toate informatiile necesare pentru conectarea la baza de date
++ persistence.xml se afla in Laborator 9/Compulsory/target/classes/META-INF/
