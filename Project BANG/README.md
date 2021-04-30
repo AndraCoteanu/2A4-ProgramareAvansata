@@ -15,5 +15,8 @@ What you can do right now with this game:
     + the character crads and the sheriff badge are clickable (they pop-up and you can clearly see what character does everyone have)
     + you can leave the game anytime by using: the x - close button, the leave button that appears on the left of the screen or by clicking 'Game' -> 'Exit' in the menu bar 
 
+#### The programming language used for this game was java (using javaFX for graphics).
 #### You can see a short video with the game as it is now following this link: https://youtu.be/XPlNMLqJKlY
+#### All the images used were either provided by https://bang.dvgiochi.com/cardslist.php?id=1#q_result (downloaded from the page source) or designed by myself usind pixlr photo editor.
+#### The rule book in .pdf format was provided by http://www.dvgiochi.net/bang/bang_rules.pdf .
 #### !! disclaimer: the game isn't yet playable, nor is it finnished
