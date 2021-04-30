@@ -17,6 +17,7 @@ What you can do right now with this game:
 
 #### The programming language used for this game was java (using javaFX for graphics).
 #### You can see a short video with the game as it is now following this link: https://youtu.be/XPlNMLqJKlY
-#### All the images used were either provided by https://bang.dvgiochi.com/cardslist.php?id=1#q_result (downloaded from the page source) or designed by myself usind pixlr photo editor.
+#### All the images used were designed by myself (sometimes starting from a googled photo or from scrach) usind pixlr photo editor.
+#### The cards were provided by https://bang.dvgiochi.com/cardslist.php?id=1#q_result (downloaded from the page source).
 #### The rule book in .pdf format was provided by http://www.dvgiochi.net/bang/bang_rules.pdf .
 #### !! disclaimer: the game isn't yet playable, nor is it finnished
