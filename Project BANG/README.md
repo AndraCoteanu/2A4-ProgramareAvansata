@@ -15,4 +15,5 @@ What you can do right now with this game:
     + the character crads and the sheriff badge are clickable (they pop-up and you can clearly see what character does everyone have)
     + you can leave the game anytime by using: the x - close button, the leave button that appears on the left of the screen or by clicking 'Game' -> 'Exit' in the menu bar 
 
+#### You can see a short video with the game as it is now following this link: https://youtu.be/XPlNMLqJKlY
 #### !! disclaimer: the game isn't yet playable, nor is it finnished
