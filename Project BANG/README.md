@@ -3,7 +3,7 @@
 ### (c) all rights for the boardgame idea, logo and the cards designs go to their rightfull owners 
 
 This game is meant to be a demo for my bachelor thesis.
-What you can do right now with tgis game:
+What you can do right now with this game:
   + you can see the rule book
   + you can open fragments of the rule book while in the middle of a game (helpful if you're a beginner)
   + you can start a game
