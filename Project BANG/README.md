@@ -8,7 +8,7 @@ What you can do right now with this game:
   + you can open fragments of the rule book while in the middle of a game (helpful if you're a beginner)
   + you can start a game
     + set the number of players you want
-    + set a name for yourself
+    + set a name for yourself (max 7 characters long and you can't use any special symbols, only letters and numbers)
   + after the game is created you can 
     + see the other players (bots) and some info about them
     + see all the info available about yourself, including the cards you start with
