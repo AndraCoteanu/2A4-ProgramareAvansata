@@ -17,7 +17,9 @@
 
 ## Optional
 
-+ In proiectul pentru aplicatia server am creat clasa Client care retine date despre toti cleitnii conectati la server
++ In proiectul pentru aplicatia server am creat clasa Client care retine date despre toti clientii conectati la server
 + Cu ajutorul unui string.split(" ") am impartit requestul de la client in cuvinte separate de spatiu:
   + primul cuvant va fi mereu comanda
   + urmatoarele cuvinte fiind fie numele de utilizator cu care vrea sa faca login / register sau numele prietenilor pe care vrea sa ii adauge
++ Am implementat toate functionalitatile: login, register, friend, send, read, exit, stop
++ Am adaugat un server timeout de 3 minute
