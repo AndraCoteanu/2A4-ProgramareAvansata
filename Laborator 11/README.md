@@ -14,3 +14,15 @@
     + id-ul este transmis direct in url
     + fisiere JSON pentru a crea noi useri (contin si id-ul si numele)
     + fie, pentru a modifica numele unui user: trimit id-ul prin url si numele ca parametru.
+
+### Optional
+
++ Am creat interfata FriendRepository si clasele FriendService si FriendController.
++ Am facut serviciile REST pentru operatiile pentru: 
+    + inserarea unui prieten, 
+    + stergerea unui prieten,
+    + afisarea tuturor prietenilor din lista. 
++ Am testat cu Postman noile servicii create.
++ Am integrat laboratorul 10 cu 11
+    + am folosit proiectul din laboratorul 11 (cu unele modificari) drept server
+    + am pastrat clientul din laboratorul 10 
