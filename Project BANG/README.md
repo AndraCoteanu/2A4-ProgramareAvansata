@@ -15,7 +15,15 @@ What you can do right now with this game:
     + the character crads and the sheriff badge are clickable (they pop-up and you can clearly see what character does everyone have)
     + you can leave the game anytime by using: the x - close button, the leave button that appears on the left of the screen or by clicking 'Game' -> 'Exit' in the menu bar 
 
-#### The programming language used for this game was java (using javaFX for graphics).
+Algorithm:
+  + separated classes for each menu screen
+  + when the player inserts his name it is verified and should be only letters and numbers and no longer than 7 characters, otherwise the player is asked to insert his name again
+  + 3 separated classes for: characters, roles and cards
+  + this classes are based on a list of information that is then suffled (1-3 times)
+  + the players get their cards so that no 2 players get to be the same character in a game or to have the same playing card
+  + in the player class are: cards list, role, character and other player info 
+
+#### The programming language used for this game prototipe was java (using javaFX for graphics).
 #### You can see a short video with the game as it is now following this link: https://youtu.be/XPlNMLqJKlY
 #### All the images used were designed by myself (sometimes starting from a googled photo or from scrach) usind pixlr photo editor.
 #### The cards were provided by https://bang.dvgiochi.com/cardslist.php?id=1#q_result (downloaded from the page source).
